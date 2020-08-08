@@ -121,7 +121,7 @@ public class TextReplace {
             
             //create the new Document.
             doc.write(new FileOutputStream(outpath));
-            JOptionPane.showMessageDialog(null, "The Document was genereted in: \n" + outpath);
+            JOptionPane.showMessageDialog(null, "El documento fue generado en: \n" + outpath);
             //uncomment the next lines if you want show the new document generated
             /*try {
                 //Desktop.getDesktop().open(new File("outpath"));
@@ -131,7 +131,7 @@ public class TextReplace {
             }*/
             
         } catch (IOException ex) {
-            JOptionPane.showMessageDialog(null, "The application dont find the file to generate the document. " + source);
+            JOptionPane.showMessageDialog(null, "La aplicacion no pudo encontrar el archivo: " + source);
         } catch(Exception e){
             System.err.println(e.toString());
         }
